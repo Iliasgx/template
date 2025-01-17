@@ -3,6 +3,7 @@
  */
 package template
 
+import common.SomeClass
 import dev.kord.common.entity.Snowflake
 import dev.kordex.core.ExtensibleBot
 import dev.kordex.core.utils.env
@@ -15,6 +16,8 @@ val TEST_SERVER_ID = Snowflake(
 private val TOKEN = env("TOKEN")   // Get the bot' token from the env vars or a .env file
 
 suspend fun main() {
+	SomeClass().doNothing()
+
 	val bot = ExtensibleBot(TOKEN) {
 		chatCommands {
 			defaultPrefix = "?"

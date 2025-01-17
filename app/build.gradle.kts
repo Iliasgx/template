@@ -16,6 +16,8 @@ group = "template"
 version = "1.0-SNAPSHOT"
 
 dependencies {
+	implementation(project(":common"))
+
 	detektPlugins(libs.detekt)
 
 	implementation(libs.kotlin.stdlib)

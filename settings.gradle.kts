@@ -9,3 +9,6 @@ pluginManagement {
 }
 
 rootProject.name = "template"
+
+include(":app")
+include(":common")
